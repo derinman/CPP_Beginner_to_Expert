@@ -6,7 +6,7 @@
  #include<iostream>
  using namespace std;
 
- main() {
+ int main() {
     /*
         for(initialization;condition;inc/dec)
             instructions_to_repeat;

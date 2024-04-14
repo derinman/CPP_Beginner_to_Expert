@@ -6,7 +6,7 @@
 #include <iostream>
 using namespace std;
 
-main()
+int main()
 {
     double var1, var2;
 

@@ -7,7 +7,7 @@
 
 using namespace std;
 
-main()
+int main()
 {
     cout<<"Relational Operators !"<<endl;
 

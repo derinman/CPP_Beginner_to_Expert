@@ -7,7 +7,7 @@
 
 using namespace std;
 
-main()
+int main()
 {
     // AND - &&
     // True only when both the expressions are true

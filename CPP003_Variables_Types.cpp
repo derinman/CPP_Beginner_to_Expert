@@ -2,7 +2,7 @@
 
 using namespace std;
 
-main()
+int main()
 {
     int a=10,b=35; // 4 bytes
     cout<<"Value of a : "<<a<<" Address of a : "<<&a <<endl;

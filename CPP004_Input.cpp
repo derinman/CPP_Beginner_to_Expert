@@ -2,7 +2,7 @@
 
 using namespace std;
 
-main()
+int main()
 {
     // cin - console input
     int a;
