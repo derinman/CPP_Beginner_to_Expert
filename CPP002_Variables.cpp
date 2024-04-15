@@ -1,15 +1,15 @@
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
 int main()
 {
-    //Declaring an integer type variable A, allocates 4 bytes of memory.
-    int A=4;
+    // Declaring an integer type variable A, allocates 4 bytes of memory.
+    int A = 4;
 
-    cout<<A <<endl;
-    //Prints the address of the variable A.
-    cout<<&A <<endl;
+    cout << A << endl;
+    // Prints the address of the variable A.
+    cout << &A << endl;
 
     /*
         1. Variables cant have the same name.
@@ -19,8 +19,8 @@ int main()
         5. Variable name can't have special characters or keywords.
     */
 
-    //Re-initialization of A.
-    A=10;
-    cout<<A <<endl;
-    cout<<&A;
+    // Re-initialization of A.
+    A = 10;
+    cout << A << endl;
+    cout << &A;
 }
