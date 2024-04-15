@@ -15,10 +15,19 @@
         }
  };
 
- double division(double a,double b) throw(DivisionByZeroException)
+//  double division(double a,double b) throw(DivisionByZeroException)
+//  {
+//      if(b==0)
+//         throw DivisionByZeroException();
+
+//     return a/b;
+//  }
+
+ double division(double a,double b)
  {
-     if(b==0)
-        throw DivisionByZeroException();
+    if(b==0)
+        throw "Division by zero condition !";
+
     return a/b;
  }
 

@@ -53,7 +53,7 @@ int main() {
 
     cout<<endl<<endl;
 
-    string array_of_strings[5]="qwerty";
+    string array_of_strings[5]={"qwerty"};
 
     array_of_strings[0]="abc";
     array_of_strings[1]="def";
