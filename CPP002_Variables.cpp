@@ -22,5 +22,5 @@ int main()
     // Re-initialization of A.
     A = 10;
     cout << A << endl;
-    cout << &A;
+    cout << &A << endl;
 }

@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
@@ -9,7 +9,7 @@ int main()
     cin >> a;
     cout << "Variable name a = " << a << endl;
 
-    string name,surname;
+    string name, surname, employeeID;
 
     cout << "Enter your name : ";
     cin >> name;
@@ -17,6 +17,8 @@ int main()
     cout << "Enter your surname : ";
     cin >> surname;
 
-    cout << "Welcome "<<name<<" "<<surname<<endl;
+    cout << "Enter your employee ID : ";
+    cin >> employeeID;
 
+    cout << "Welcome " << name << " " << surname << " " << employeeID << endl;
 }
