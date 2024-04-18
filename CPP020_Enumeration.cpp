@@ -3,29 +3,41 @@
  * Created:   16.01.2020
  **/
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-enum dayOfWeek {Monday = 1, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday};
+enum dayOfWeek
+{
+    Monday = 1,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday,
+    Sunday
+};
 
 string getDay(dayOfWeek);
 
-int main() {
+int main()
+{
 
-    //dayOfWeek d = Wednesday;
-    //cout<<d<<endl;
-    //cout<<getDay(Tuesday)<<endl;
+    // dayOfWeek d = Wednesday;
+    // cout<<d<<endl;
+    // cout<<getDay(Tuesday)<<endl;
 
-    cout<<"Enter a day of the week ?"<<endl;
+    cout << "Enter a day of the week ?" << endl;
     int i;
-    cin>>i;
-    cout<<getDay(dayOfWeek(i))<<endl;
+    cin >> i;
+    cout << getDay(dayOfWeek(i)) << endl;
 
     return 0;
 }
 
-string getDay(dayOfWeek d) {
-    switch(d) {
+string getDay(dayOfWeek d)
+{
+    switch (d)
+    {
     case Monday:
         return "Hey ! You have selected Monday";
     case Tuesday:
