@@ -3,10 +3,11 @@
  * Created:   02.02.2020
  **/
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-struct personalData {
+struct personalData
+{
     string name;
     string address;
     string contactNo;
@@ -15,7 +16,8 @@ struct personalData {
 
 void modify(personalData *);
 
-int main() {
+int main()
+{
 
     personalData person[5];
 
@@ -26,31 +28,32 @@ int main() {
 
     person[1].name = "Nikola Tesla";
 
-    cout<<person[0].name<<endl;
-    cout<<person[0].address<<endl;
-    cout<<person[0].contactNo<<endl;
-    cout<<person[0].age<<endl;
+    cout << person[0].name << endl;
+    cout << person[0].address << endl;
+    cout << person[0].contactNo << endl;
+    cout << person[0].age << endl;
 
-    cout<<endl;
+    cout << endl;
 
-    //Ways of fetching the values using pointer
+    // Ways of fetching the values using pointer
 
-    cout<<(*person).name<<endl;
-    cout<<(*(person+1)).name<<endl;
-    cout<<(*&person[0]).name<<endl;
-    cout<<(person+1)->name<<endl;
+    cout << (*person).name << endl;
+    cout << (*(person + 1)).name << endl;
+    cout << (*&person[0]).name << endl;
+    cout << (person + 1)->name << endl;
 
     personalData *p = person;
-    cout<<p->name<<endl;
+    cout << p->name << endl;
 
-    cout<<endl;
+    cout << endl;
 
     modify(p);
-    cout<<(p+1)->name<<endl;
+    cout << (p + 1)->name << endl;
 
     return 0;
 }
 
-void modify(personalData *person) {
-    (person+1)->name="Peter";
+void modify(personalData *person)
+{
+    (person + 1)->name = "Peter";
 }
