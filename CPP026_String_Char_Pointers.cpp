@@ -9,63 +9,70 @@ using namespace std;
 int main()
 {
 
-    string text = "Hello"; // H e l l o \0
+     string text = "Hello"; // H e l l o \0
 
-    char ch = text[0];
+     char ch = text[0];
 
-    char characters[] = "Hello World";
+     cout << ch << endl;
 
-    cout << characters << endl;
+     char characters[] = "Hello World";
 
-    cout << characters[0] << endl;
-    cout << *(characters) << endl;
-    cout << characters[1] << endl;
-    cout << *(characters + 1) << endl;
+     cout << characters << endl;
 
-    cout << endl
-         << endl;
+     cout << characters[0] << endl;
+     cout << *(characters) << endl;
+     cout << characters[1] << endl;
+     cout << *(characters + 1) << endl;
 
-    char *p = characters;
+     cout << endl
+          << endl;
 
-    cout << p[0] << endl;
-    cout << *p << endl;
+     char *p = characters;
 
-    cout << p[1] << endl;
-    cout << *(p + 1) << endl;
+     cout << p[0] << endl;
+     cout << *p << endl;
 
-    cout << endl
-         << endl;
+     cout << p[1] << endl;
+     cout << *(p + 1) << endl;
 
-    string text1 = "Hey";
+     cout << endl
+          << endl;
 
-    const char *text2 = text1.c_str();
-    cout << text2 << endl;
+     string text1 = "Hey";
 
-    char array[] = "Sample Text";
-    string test = array;
-    cout << test << endl;
+     const char *text2 = text1.c_str();
+     cout << text2 << endl;
 
-    const char *a = "Test";
-    cout << a << endl;
+     char array[] = "Sample Text";
+     string test = array;
+     cout << test << endl;
 
-    char *const dynamic_array = new char[50];
-    dynamic_array[0] = 'k';
-    dynamic_array[1] = '\0';
-    cout << dynamic_array << endl;
-    delete[] dynamic_array;
+     const char *a = "Test";
+     cout << a << endl;
 
-    cout << endl
-         << endl;
+     char *const dynamic_array = new char[50];
+     dynamic_array[0] = 'k';
+     dynamic_array[1] = '\0';
+     cout << dynamic_array << endl;
+     delete[] dynamic_array;
 
-    string array_of_strings[5] = {"qwerty"};
+     cout << endl
+          << endl;
 
-    array_of_strings[0] = "abc";
-    array_of_strings[1] = "def";
+     string array_of_strings[5] = {"qwerty"};
 
-    cout << array_of_strings[0] << endl;
-    cout << array_of_strings[1] << endl;
-    cout << array_of_strings[2] << endl;
-    //...
+     cout << array_of_strings << endl;
+     cout << array_of_strings[0] << endl;
 
-    return 0;
+     array_of_strings[0] = "abc";
+     array_of_strings[1] = "def";
+
+     cout << array_of_strings[0] << endl;
+     cout << array_of_strings[1] << endl;
+     cout << array_of_strings[2] << endl;
+
+     cout << array_of_strings << endl;
+     cout << array_of_strings[0] << endl;
+
+     return 0;
 }
