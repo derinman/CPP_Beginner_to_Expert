@@ -20,7 +20,7 @@ int main()
     cout << endl;
 
     int array[10];
-    cout<<sizeof(array)/sizeof(array[0])<<endl;
+    cout << sizeof(array) / sizeof(array[0]) << endl;
 
     for (int i = 0; i < sizeof(array) / sizeof(array[0]); i++)
     {

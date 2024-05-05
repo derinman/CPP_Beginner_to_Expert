@@ -39,6 +39,7 @@ void lottery(int total_balls, int balls_to_draw)
     for (int i = 0; i < balls_to_draw; i++)
     {
 
+        // cout << rand() << endl;
         balls[i] = rand() % total_balls + 1;
 
         for (int j = 0; j < i + 1; j++)
